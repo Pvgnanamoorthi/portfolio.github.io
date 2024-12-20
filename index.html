@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            background-image: url('https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            position: relative;
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: -1;
+        }
+
+        .header {
+            background-color: rgba(51, 51, 51, 0.9);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .profile-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            padding: 2rem;
+            background-color: rgba(255, 255, 255, 0.95);
+            margin: 2rem auto;
+            max-width: 1000px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.3);
+        }
+
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin: 1rem 0;
+        }
+
+        .social-icons a {
+            color: #333;
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #4CAF50;
+        }
+
+        .projects-section {
+            padding: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .project-category {
+            background-color: rgba(255, 255, 255, 0.95);
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.3);
+            backdrop-filter: blur(5px);
+        }
+
+        .project-category h3 {
+            color: #333;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .project-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+
+        .project-item {
+            background-color: rgba(249, 249, 249, 0.9);
+            padding: 1rem;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+
+        .project-item:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body>
+    <div class="header" style="background: linear-gradient(rgba(255, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url('game-bg.jpg') center/cover; padding: 4rem 2rem; position: relative;">
+        <div class="nav" style="display: flex; justify-content: space-between; align-items: center; position: absolute; top: 2rem; left: 2rem; right: 2rem;">
+            <h3 style="color: white; margin: 0;">Portfolio</h3>
+            <i class="fas fa-bars" style="color: white; font-size: 1.5rem; cursor: pointer;"></i>
+        </div>
+        <img src="anime3.jpg" alt="Profile Photo" style="width: 150px; height: 150px; border-radius: 50%; position: absolute; left: 2rem; top: 50%; transform: translateY(-50%); border: 3px solid white;">
+        <div style="max-width: 800px; margin-left: auto; color: white; text-align: right;">
+            <h1 style="font-size: 3rem; margin-bottom: 1rem;">GNANAMOORTHI PV</h1>
+            <h2 style="font-size: 1.5rem; margin-bottom: 1.5rem;">GAME DESIGNER</h2>
+            <p style="line-height: 1.6; margin-bottom: 1rem;">Hello! My name is Gnanamoorthi PV, a Game Designer with a B.Tech in Artificial Intelligence and Data Science and experience in 3D Art and Game Development. Currently working as a Student at St. Joseph's Institute of Technology, Chennai-600 119. Below is my portfolio showcasing my work.</p>
+            <a href="mailto:pvgnanamoorthi@gmail.com" style="color: white; text-decoration: none;">pvgnanamoorthipalanivel@gmail.com</a>
+        </div>
+    </div>
+
+    <!-- <div class="profile-section">
+        <img src="anime3.jpg" alt="Profile Photo" class="profile-image" style="border-radius: 50%;">
+        <div>
+            <h2>About Me</h2>
+            <p>A passionate creator with expertise in 3D design, game development, and digital art.</p>
+        </div>
+    </div> -->
+
+    <div class="projects-section">
+        <div class="project-category">
+            <h3>Blender Projects</h3>
+            <div class="project-list">
+                <div class="project-item">
+                    <h4>Project 1</h4>
+                    <p>Description of your Blender project</p>
+                </div>
+                <div class="project-item">
+                    <h4>Project 2</h4>
+                    <p>Description of your Blender project</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-category">
+            <h3>Unity Projects</h3>
+            <div class="project-list">
+                <div class="project-item">
+                    <h4>Game Project 1</h4>
+                    <p>Description of your Unity project</p>
+                </div>
+                <div class="project-item">
+                    <h4>Game Project 2</h4>
+                    <p>Description of your Unity project</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-category">
+            <h3>3D Designs</h3>
+            <div class="project-list">
+                <div class="project-item">
+                    <h4>Design 1</h4>
+                    <p>Description of your 3D design</p>
+                </div>
+                <div class="project-item">
+                    <h4>Design 2</h4>
+                    <p>Description of your 3D design</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="project-category">
+            <h3>Games Created</h3>
+            <div class="project-list">
+                <div class="project-item">
+                    <h4>Game 1</h4>
+                    <p>Description of your game</p>
+                </div>
+                <div class="project-item">
+                    <h4>Game 2</h4>
+                    <p>Description of your game</p>
+                </div> -->
+
+                <footer>
+                    <div style="text-align: center;">
+                        <div class="social-icon github" style="background-color: rgba(255, 255, 255, 0.9); padding: 10px; margin: 5px; border-radius: 25px; box-shadow: 0 0 10px rgba(0,0,0,0.1); display: inline-block;">
+                            <a href="https://github.com/Pvgnanamoorthi" target="_blank"><i class="fab fa-github" style="color: #171515;"></i></a>
+                        </div>
+                        <div class="social-icon linkedin" style="background-color: rgba(255, 255, 255, 0.9); padding: 10px; margin: 5px; border-radius: 25px; box-shadow: 0 0 10px rgba(0,0,0,0.1); display: inline-block;">
+                            <a href="https://www.linkedin.com/in/gnanamoorthipv/" target="_blank"><i class="fab fa-linkedin" style="color: #0077b5;"></i></a>
+                        </div>
+                        <div class="social-icon twitter" style="background-color: rgba(255, 255, 255, 0.9); padding: 10px; margin: 5px; border-radius: 25px; box-shadow: 0 0 10px rgba(0,0,0,0.1); display: inline-block;">
+                            <a href="https://twitter.com/your-handle" target="_blank"><i class="fab fa-twitter" style="color: #1DA1F2;"></i></a>
+                        </div>
+                        <div class="social-icon instagram" style="background-color: rgba(255, 255, 255, 0.9); padding: 10px; margin: 5px; border-radius: 25px; box-shadow: 0 0 10px rgba(0,0,0,0.1); display: inline-block;">
+                            <a href="https://instagram.com/elestilo_gm" target="_blank"><i class="fab fa-instagram" style="color: #E1306C;"></i></a>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
